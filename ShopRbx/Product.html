@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roblox Game Shop</title>
+  <link rel="icon" type="image/png" href="icon.png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Inter", Arial, sans-serif;
+      background: linear-gradient(180deg, #eef2ff, #f8fafc);
+      color: #0f172a;
+    }
+
+    header {
+      background: white;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      width: 45px;
+      height: 45px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+    }
+
+    .product-img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+      max-height: 380px;
+    }
+
+    h2 {
+      margin-top: 20px;
+      font-size: 26px;
+    }
+
+    p {
+      color: #6b7280;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAk1BMVEUzX/////8wXf8sW/8mWP8uXP8hVf8lV/8QTv8eVP8aUv8VUP8ST//5+v/H0P/Z3/+pt/+6xf/f5P9qhf/z9f+vvP/u8f+Oof89Zv/By//l6f+ltP/T2v+Gm/9uiP+drf9SdP9gfv/N1f+Upv9/lf85Y/9Kbv93j/+1wf+Lnv+Alv9Pcv/o7P+Tpf++yf8AQv8ASP9UTeuXAAAGbklEQVR4nO2di1bqMBBFoS2FtrwREQERBBFf9/7/192meJfyENLpmSRlzf4A7FkrzeSczsRKRRAEQRAEQRAEQRAEQRAEQRAEhWf7Abjx1nEcXLXKsFedPj03osD2g7DRfK+m3IxnXhL6th+GA29d/c/98CGO6zXbT4Qm2FZ/0pk/pgv2ql7LqF09oNUe3TVD/2pUNlqHChW3L5swuY4FW3s8JTCjP1k0r6COBPNfFSqWaR0p+Q4bT88qTLn5fPXLXEeSSwIz7oeDJA5K+Vr6Ay2Fiun8rYwHn3CorTClNZ5VylZHkvs8ChXvL5uoTAcfP6/AjM5k0ShJHfFXJIXV3cGnDHUk/KQqVNz2VoHrdaRxW0Shot9dJA4vWO+uqMCMpbsGOviAKKy6a6DjJUqhIjXQiWt1pIEUmDF1y0DXFnCF1ayOrF05+NQnHAoV744Y6LjDpVDRsW+gvYhTYMbyw6qB9jfsCqt2DXT4YkKhwpaB3oXdptjVEcMSTQpUtMZbowY6mJlWqEjriLEvB9HYhkKFKQPduLGlULHkN9Dem02BCm4DfSHsNkS/O2Az0JfDblNM5zwGWi/sNkRqoOECc4TdZoAv1bBrW9I+nQQssJL0bWvaZ1IHC/QC25IOWKCPOfSwm4kGWKBqE3KKZYxWWDzsxvKEroegsBvHM7pWBCPbkva5gb+Gx21CdvkM0QpPtwnZ4xX9Gp5pE7ID3PPXnXBO39zDj2y8YXd+hvDX0CnnlPKANvr+g21JB8APNPnahPiZwhXmbxPiZY52TpWabUkHPKKLRfBqW9I+LbxzKtQmhKcdoRXaDbuPGcGd07NtSQfcwZ3Tk21J+9zCX0NKmxCnFenhnRPhKdp/Bl2uIrqBH9kWhKcYBX6Y+K9jjj0KHnaT2oR2m0EQNd7m6A86fSfC7u/NoBbE8cMQuWC78LA7JDzF/mbgh83KrI3afBbw15DSJrQ6eop0wT7OIT4avkhJbUInDx21ehxtXor25OCdE6VN6NfNwEsX7HpUKJnEh93ry3/0iLMxipcu2MWE/K3uDX5k217+o0cMLm0GtXoSbnqUTyGOhN06m4HnR38JPz3GOyfCJq+5GZA+Sc6cCLs1YxTSJ0mwPmKbkGaMQvkk+d5EK6S0CWnGKKRPki9OhN2aMQrpkyQ+7Ka0CWnGKKRd2o2wWzNGoezSHXzYXcg5nYW0S8PbhEgzsZoxCumTpBttQsfO6SSkZk432oQ0dzvKLu1Gm5BmjELapT+caBPq6r2GpGZOfNhNmYm96Jx2MO7SOSDNxGrGKIy7dA4oYTenc9LcpfUhzcRyOif4pAUp7GZ0Tviwm9ImxOmcNHfpPAoJT8HpnDR3aX1IbUKczsmNsJvRObkRdnM6pzl+0onwFJzOCd8mRJmJZXRO+DYh0kzs30hrLJkx38oBqU3otrfSuN6C5Jy2cOdEnontXxxLJuVba7fahM5faEpxTm6E3XuoC01/maOnjMG5EXYf0Tl58QPJObnRJnSKVnurLhD6+dsk5xTC24SQM7Hv6sro75tK3HBO8JnY76s+Sc6pHDOxX1e0kZyTG21COtwPB38ozsmNsFsXgnNyI+zmRGZicyMzsaaRmdjcyEysaRhmYp25TWgHfiaWEnZzcv0zsfiw27GZWIY2IZmJNYzMxOZGZmJNIzOxuZGZWNO40SbEiRttQpy4MRPLCEPY7dhtQvA2IecugIS3CVUqM5YJczLwRZoN7D4/OVMx8G1CGV4QJ4uuEzeyMrQJ/cevJ8GKNOUJBT4Tu4fnh427EWyOngI+7D5WGcSNxcRaBcHPxJ6kVo/jh8Jz9CTgM7G/4mUXP4yNL1hT+r5guankLPg2oYvU0joyGBqrI/g2IS3U1TqrTyMHH3ibUB6VRg4+kd1/bxXETeY6gg+7c5Ndb8FXR/AzsRSy+1i2PAcf+EwsGS+7QAhfR/iPbHlIDz4J9sYrhjahwqR1xANe0QaficUANNDwsBsGyEDjw24oAAONbxNCU9RAw8NuFooY6FIIzFAGmnDwwbcJcUIx0Pg2IXZyGmiGsNsAmYHWrCOlWqR7aBpoprDbFMpAf5w/+DCG3Ya4ZKDhbUJWOGOg8W1CtvjNQOPbhGxyykDDZ2Ktc2ig4TOxTpDWkdqXgbYQdpviy0Dj24RcIq0j8XUu0p9cvUBBEARBEARBEARBEARBEARB0OQfemiTe7EIS7IAAAAASUVORK5CYII=" alt="Logo">
+    <h1>Roblox Game Shop</h1>
+  </header>
+
+  <div class="container">
+    <img class="product-img" src="https://via.placeholder.com/800" alt="Product Image" />
+
+    <h2>Product </h2>
+    <p>
+      This is a more detailed description of the product. You can write anything
+      here such as features, specifications, and any important information.
+    </p>
+
+    <a href="#buy" class="buy-btn" style="display:inline-block; margin-top:20px; background:#2563eb; color:white; padding:12px 20px; border-radius:10px; font-weight:600; text-decoration:none;">Buy Now</a>
+
+    <p style="margin-top:25px;"><a href="index.html">← Back to Shop</a></p>
+  </div>
+</body>
+</html>
